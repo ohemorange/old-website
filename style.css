@@ -1,0 +1,262 @@
+body {background-color: #efffff; background-image:url("_Media/dotflower2.png"); background-repeat:no-repeat; background-position:center -80px; text-align: left; margin:auto 10px 20px 10px; font-family: "Lucida Grande"; color: #555555; padding:0px;}
+h1 {font-size: 30px; font-family: "Lucida Sans Unicode"; text-align: center; margin-bottom: 10px; color: #333; text-transform:uppercase; /*text-shadow: 0px 1px 3px #666;*/}
+a#homenav{color: #333;}
+h2 {font-size: 20px; color: #444444; margin: 20px auto; text-align: center; width:100%;}
+h3 {color: #444444;}
+h4 {font-size: 18px; color: #444444; margin: 10px auto; max-width:600px; width:100%;}
+h5 {font-size: 15px; color: #444444; margin: 5px auto; max-width:600px; width:100%;}
+p {font-size: 12px; padding: 6px 0px; margin: auto; list-style-type:none; overflow:hidden; max-width:600px; width:100%;}
+table {font-size: 12px; width: 50%; text-align: center; vertical-align: middle;}
+
+.details img{width:100%; margin-top:10px;}
+
+#navigation {
+	border: 1px dashed #979797;
+	border-width: 1px 0;
+	font-size: 12px;
+	margin: 0;
+	overflow: hidden;
+}
+
+#navigation ul, #navigation ul li {
+	list-style: none;
+	margin-top	: 8px;
+	padding: 0;
+}
+
+#navigation ul li {
+	display: inline;
+	text-align: center;
+	float:none;
+	overflow:hidden;
+}
+#navigation ul{
+	text-align: center;
+}
+
+#navigation ul li.last {
+	margin-right: 0;
+}
+#main {margin:auto auto 20px auto; padding: 0; text-align: left; width:100%;}
+#main a, a:link, a:visited {color:#99BBFF; text-decoration:none;}
+#main a:hover, a:active {color:#483D8B;}
+#navigation a:link, a:visited {color:#777777; text-align:center; padding:2px 20px; text-decoration:none; text-transform:uppercase;}
+#navigation a:hover, a:active {color:#483D8B;}
+
+.title {text-align:center;}
+
+body#projects a#projnav,
+body#code a#codenav,
+body#contact a#contactnav, 
+body#photo a#photonav,	
+body#about a#aboutnav{
+	color:#333333;
+}
+
+.content {clear:both;}
+
+.wide { display:block;}
+
+.vid {max-width:600px; width:100%; margin:auto;}
+
+.wide.left .graphic, img.wide.left { margin:auto; }
+.wide.center .graphic, img.wide.center { margin:auto;}
+.wide.right .graphic, img.wide.right { margin:auto; }
+
+.ImageElement.left { text-align:center; }
+.ImageElement.center { text-align:center; }
+.ImageElement.right { text-align:center; }
+
+/* Captions should align themselves with the graphic */
+.graphic-container.left .caption { text-align:center; }
+.graphic-container.center .caption { text-align:center; }
+.graphic-container.right .caption { text-align:center; }
+.graphic-container { max-width:800px; width:100%; margin:auto; height:auto; padding:0px; text-align: center; }
+
+.graphic-container .graphic {text-align: center; margin:auto;}
+
+.graphic {text-align: center; padding:0px; margin: 0px; border-bottom: 0px;}
+
+.graphic.large img { box-shadow: 3px 3px 4px #333;}
+
+.gridItem .last
+{
+	margin-right: 0;
+}
+
+/* Inline iframes need to display as a block to layout right */
+.graphic iframe { display:block; }
+
+/* Pagelet photo grids should be generally be auto width (some 1.x designs hardcoded an exact width) */
+/*.pagelet*/ .photogrid-index { width:auto; }
+
+/* 
+PHOTO GRID PAGE
+*/
+
+.photogrid-index{
+	margin:auto;
+    text-align: center;
+	padding: 0em 12px;   
+	/*max-width:100px;*/
+}
+
+.gridItem {
+	float:left;
+    position:relative;
+    width:150px;
+    height:140px;
+   	margin:0px 20px;
+    overflow: hidden;
+}
+
+.gridItem * {
+	padding:0px;
+	margin: auto;
+}
+
+.gridItem a.imageLink {
+	position: absolute;
+	top:0px;
+	left:10px;
+	width: 130px;
+	display:block;
+	text-align:center;
+
+}
+
+.gridItem img {
+    border: 1px solid #999;
+    margin: auto;
+ }
+
+.pictures .gridItem h3 {
+	display:none;
+}
+
+.gridItem h3 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:150px;
+	height:120px;
+	background: transparent;
+    font-size: 13px;
+	border-top:none;
+}
+
+.gridItem h3 a{
+	display:block;
+	position:absolute;
+	top:0px;
+	left: 0px;
+	width:150px;
+	height: 30px;
+	padding-top: 95px;
+	text-decoration:none;
+	text-align:center;
+	font-size:13px;
+	font-weight:normal;
+	color:#000000;
+	border-top:none;
+}
+
+.gridItem:hover {
+    background: url(photogrid-item-gradient.png) repeat-x;
+}
+
+/*.gridItem h3 span.in {
+	margin-top: 136px;
+	display:block;
+	width: 100%;
+	padding:2px;
+}*/
+
+
+/*.gridItem h3 a span.in {*/
+	/* if we're inside a link, the link will provide correct positioning */	
+	/*margin-top: 0px; 
+}*/
+
+/*
+PHOTO NAVIGATION
+*/
+
+.photo-navigation {
+	position:relative;
+    height: 21px;
+    width:200px;
+    margin:0px auto 8px auto;
+}
+
+.photo-navigation div {
+	width:46px;
+	height:21px;
+	position: absolute;
+    text-indent: -5000em;
+}
+
+/* some love for IE5/Mac */
+* html .photo-navigation>div {
+	text-indent: 5000em;
+}
+
+.photo-navigation a {
+	border-bottom:none;
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+#previous-photo, #next-photo, #photo-list, #previous-photo a, #next-photo a, #photo-list a {
+	background-image: url(Arrows.gif);
+	background-repeat: no-repeat;
+}
+
+* html #previous-photo a, * html #next-photo a, * html #photo-list a, * html #previous-photo a, * html #next-photo a, * html #photo-list a {
+	background-image: url(Arrows.gif);
+}
+
+
+#previous-photo	{
+    left: 26px;
+   	background-position: 0px -39px;
+}
+
+#previous-photo a {
+	background-position: 0px 0px;
+}
+
+#next-photo {
+    background-position: -100px -39px;
+    left: 133px; 
+}
+#next-photo a {
+    background-position: -100px 0px;
+}
+
+#photo-list {
+    background-position: -53px -39px;
+    left: 83px;
+}
+#photo-list a {
+    background-position: -53px 0px;
+}
+
+.text-navigation #previous-photo, .text-navigation #next-photo, .text-navigation  #photo-list, .text-navigation a, .text-navigation a:hover{
+	background:none!important;
+	font-weight:bold;
+}
+
+
+.image-controls a {
+	border-bottom:none !important;
+}
+
+/* for some reason IE5/Mac applies this to paragraphs after .article-info, so better hide it */
+/* Hides from IE5-mac \*/
+.article-info {
+	text-align:right;
+	font-style: italic;
+}
+/* End hide from IE5-mac */
