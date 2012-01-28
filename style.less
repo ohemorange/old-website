@@ -5,7 +5,11 @@
 }
 
 body {background-color: @background-color; background-image:url("_Media/dotflower2.png"); background-repeat:no-repeat; background-position:center -80px; text-align: left; margin:auto 10px 20px 10px; font-family: "Lucida Grande"; color: #555555; padding:0px;}
-h1 {font-size: 30px; font-family: "Lucida Sans Unicode"; text-align: center; margin-bottom: 10px; color: #333; text-transform:uppercase; /*text-shadow: 0px 1px 3px #666;*/}
+h1 {
+	font-size: 30px; font-family: "Lucida Sans Unicode"; text-align: center; margin-bottom: 10px; color: #333; text-transform:uppercase; /*text-shadow: 0px 1px 3px #666;*/
+	a, a:link, a:visited {text-decoration:none;}
+	a:hover, a:active {color:#483D8B;}
+}
 a#homenav{color: #333;}
 h2 {font-size: 20px; color: @minorHeadColor; margin: 20px auto; text-align: center; .width;}
 h3 {color: #444444;}
@@ -35,15 +39,24 @@ table {font-size: 12px; width: 50%; text-align: center; vertical-align: middle;}
 			float:none;
 			overflow:hidden;
 			&.last {margin-right: 0;}
+
+			a, a:link, a:visited {color:#777777; text-align:center; padding:2px 20px; text-decoration:none; text-transform:uppercase;}
+			a:hover, a:active {color:#483D8B;}
 		}
 	}
+
+	
+
 }
 
-#main {margin:auto auto 20px auto; padding: 0; text-align: left; width:100%;}
-#main a, a:link, a:visited {color:#99BBFF; text-decoration:none;}
-#main a:hover, a:active {color:#483D8B;}
-#navigation a:link, a:visited {color:#777777; text-align:center; padding:2px 20px; text-decoration:none; text-transform:uppercase;}
-#navigation a:hover, a:active {color:#483D8B;}
+#main {
+	margin:auto auto 20px auto;
+	padding: 0;
+	text-align: left;
+	width:100%;
+	a, a:link, a:visited {color:#99BBFF; text-decoration:none;}
+	a:hover, a:active {color:#483D8B;}
+}
 
 .title {text-align:center;}
 
