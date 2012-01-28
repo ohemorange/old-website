@@ -74,21 +74,17 @@ body#about a#aboutnav{
 
 .vid {.width; margin:auto;}
 
-.wide.left .graphic, img.wide.left { margin:auto; }
 .wide.center .graphic, img.wide.center { margin:auto;}
-.wide.right .graphic, img.wide.right { margin:auto; }
 
-.ImageElement.left { text-align:center; }
 .ImageElement.center { text-align:center; }
-.ImageElement.right { text-align:center; }
 
 /* Captions should align themselves with the graphic */
-.graphic-container.left .caption { text-align:center; }
 .graphic-container.center .caption { text-align:center; }
-.graphic-container.right .caption { text-align:center; }
-.graphic-container { max-width:800px; width:100%; margin:auto; height:auto; padding:0px; text-align: center; }
-
-.graphic-container .graphic {text-align: center; margin:auto;}
+.graphic-container { max-width:800px; width:100%; margin:auto; height:auto; padding:0px; text-align: center; 
+	.graphic {
+		 margin:auto;
+	}
+}
 
 .graphic {text-align: center; padding:0px; margin: 0px; border-bottom: 0px;}
 
@@ -123,62 +119,62 @@ PHOTO GRID PAGE
     height:140px;
    	margin:0px 20px;
     overflow: hidden;
-}
 
-.gridItem * {
-	padding:0px;
-	margin: auto;
-}
+	* {
+		padding:0px;
+		margin: auto;
+	}
 
-.gridItem a.imageLink {
-	position: absolute;
-	top:0px;
-	left:10px;
-	width: 130px;
-	display:block;
-	text-align:center;
+	img {
+	    border: 1px solid #999;
+	    margin: auto;
+	}
 
-}
+	h3 {
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:150px;
+		height:120px;
+		background: transparent;
+	    font-size: 13px;
+		border-top:none;
 
-.gridItem img {
-    border: 1px solid #999;
-    margin: auto;
+		a {
+			display:block;
+			position:absolute;
+			top:0px;
+			left: 0px;
+			width:150px;
+			height: 30px;
+			padding-top: 95px;
+			text-decoration:none;
+			text-align:center;
+			font-size:13px;
+			font-weight:normal;
+			color:#000000;
+			border-top:none;
+
+			&.imageLink {
+				position: absolute;
+				top:0px;
+				left:10px;
+				width: 130px;
+				display:block;
+				text-align:center;
+			}
+		}
+	}
+
+	&:hover{
+		background: url(photogrid-item-gradient.png) repeat-x;
+	}
  }
 
 .pictures .gridItem h3 {
 	display:none;
 }
 
-.gridItem h3 {
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:150px;
-	height:120px;
-	background: transparent;
-    font-size: 13px;
-	border-top:none;
-}
-
-.gridItem h3 a{
-	display:block;
-	position:absolute;
-	top:0px;
-	left: 0px;
-	width:150px;
-	height: 30px;
-	padding-top: 95px;
-	text-decoration:none;
-	text-align:center;
-	font-size:13px;
-	font-weight:normal;
-	color:#000000;
-	border-top:none;
-}
-
-.gridItem:hover {
-    background: url(photogrid-item-gradient.png) repeat-x;
-}
 
 /*.gridItem h3 span.in {
 	margin-top: 136px;
@@ -202,13 +198,20 @@ PHOTO NAVIGATION
     height: 21px;
     width:200px;
     margin:0px auto 8px auto;
-}
+	
+	div {
+		width:46px;
+		height:21px;
+		position: absolute;
+	    text-indent: -5000em;
+	}
 
-.photo-navigation div {
-	width:46px;
-	height:21px;
-	position: absolute;
-    text-indent: -5000em;
+	a {
+		border-bottom:none;
+		display:block;
+		width:100%;
+		height:100%;
+	}
 }
 
 /* some love for IE5/Mac */
@@ -216,12 +219,6 @@ PHOTO NAVIGATION
 	text-indent: 5000em;
 }
 
-.photo-navigation a {
-	border-bottom:none;
-	display:block;
-	width:100%;
-	height:100%;
-}
 
 #previous-photo, #next-photo, #photo-list, #previous-photo a, #next-photo a, #photo-list a {
 	background-image: url(Arrows.gif);
@@ -236,26 +233,25 @@ PHOTO NAVIGATION
 #previous-photo	{
     left: 26px;
    	background-position: 0px -39px;
-}
-
-#previous-photo a {
-	background-position: 0px 0px;
+   	a {
+		background-position: 0px 0px;
+	}
 }
 
 #next-photo {
     background-position: -100px -39px;
     left: 133px; 
-}
-#next-photo a {
-    background-position: -100px 0px;
+    a {
+    	background-position: -100px 0px;
+	}
 }
 
 #photo-list {
     background-position: -53px -39px;
     left: 83px;
-}
-#photo-list a {
-    background-position: -53px 0px;
+	a {
+    	background-position: -53px 0px;
+	}
 }
 
 .text-navigation #previous-photo, .text-navigation #next-photo, .text-navigation  #photo-list, .text-navigation a, .text-navigation a:hover{
