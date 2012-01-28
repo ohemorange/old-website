@@ -1,11 +1,17 @@
-body {background-color: #efffff; background-image:url("_Media/dotflower2.png"); background-repeat:no-repeat; background-position:center -80px; text-align: left; margin:auto 10px 20px 10px; font-family: "Lucida Grande"; color: #555555; padding:0px;}
+@background-color: #efffff;
+@minorHeadColor: #444444;
+.width {
+	max-width: 600px; width:100%;
+}
+
+body {background-color: @background-color; background-image:url("_Media/dotflower2.png"); background-repeat:no-repeat; background-position:center -80px; text-align: left; margin:auto 10px 20px 10px; font-family: "Lucida Grande"; color: #555555; padding:0px;}
 h1 {font-size: 30px; font-family: "Lucida Sans Unicode"; text-align: center; margin-bottom: 10px; color: #333; text-transform:uppercase; /*text-shadow: 0px 1px 3px #666;*/}
 a#homenav{color: #333;}
-h2 {font-size: 20px; color: #444444; margin: 20px auto; text-align: center; width:100%;}
+h2 {font-size: 20px; color: @minorHeadColor; margin: 20px auto; text-align: center; .width;}
 h3 {color: #444444;}
-h4 {font-size: 18px; color: #444444; margin: 10px auto; max-width:600px; width:100%;}
-h5 {font-size: 15px; color: #444444; margin: 5px auto; max-width:600px; width:100%;}
-p {font-size: 12px; padding: 6px 0px; margin: auto; list-style-type:none; overflow:hidden; max-width:600px; width:100%;}
+h4 {font-size: 18px; color: @minorHeadColor; margin: 10px auto; }
+h5 {font-size: 15px; color: @minorHeadColor; margin: 5px auto; .width;}
+p {font-size: 12px; padding: 6px 0px; margin: auto; list-style-type:none; overflow:hidden; .width;}
 table {font-size: 12px; width: 50%; text-align: center; vertical-align: middle;}
 
 .details img{width:100%; margin-top:10px;}
@@ -16,27 +22,23 @@ table {font-size: 12px; width: 50%; text-align: center; vertical-align: middle;}
 	font-size: 12px;
 	margin: 0;
 	overflow: hidden;
-}
-
-#navigation ul, #navigation ul li {
-	list-style: none;
-	margin-top	: 8px;
-	padding: 0;
-}
-
-#navigation ul li {
-	display: inline;
 	text-align: center;
-	float:none;
-	overflow:hidden;
-}
-#navigation ul{
-	text-align: center;
+
+	ul {
+		list-style: none;
+		margin-top	: 8px;
+		padding: 0;
+
+		li {
+			display: inline;
+			text-align: center;
+			float:none;
+			overflow:hidden;
+			&.last {margin-right: 0;}
+		}
+	}
 }
 
-#navigation ul li.last {
-	margin-right: 0;
-}
 #main {margin:auto auto 20px auto; padding: 0; text-align: left; width:100%;}
 #main a, a:link, a:visited {color:#99BBFF; text-decoration:none;}
 #main a:hover, a:active {color:#483D8B;}
@@ -57,7 +59,7 @@ body#about a#aboutnav{
 
 .wide { display:block;}
 
-.vid {max-width:600px; width:100%; margin:auto;}
+.vid {.width; margin:auto;}
 
 .wide.left .graphic, img.wide.left { margin:auto; }
 .wide.center .graphic, img.wide.center { margin:auto;}
