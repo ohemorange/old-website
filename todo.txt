@@ -8,3 +8,5 @@ bloomreach.com has a nice layout
 as does nest.com
 
 play with twitter api
+
+geektool desktops on website
