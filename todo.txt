@@ -10,3 +10,5 @@ as does nest.com
 play with twitter api
 
 geektool desktops on website
+
+show/hide given hours

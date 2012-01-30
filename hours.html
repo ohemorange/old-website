@@ -5,7 +5,8 @@
 	<title> Erica Portnoy </title>
 	<meta http-equiv="Content-Type" content="text/html: charset=UTF-8"/>
    	<link rel="stylesheet/less" type="text/css" href="style.less">
-    <script src="less.js" type="text/javascript"></script>	
+    <script src="less.js" type="text/javascript"></script>
+    <script language="JavaScript">function ShwHid(divId){if(document.getElementById(divId).style.display == 'none'){document.getElementById(divId).style.display='block';}else{document.getElementById(divId).style.display='none';}}</script>	
     </head>
 
    <body id = "hours">
@@ -23,17 +24,62 @@
 		</div>
 
 		<div id="main">
-			<div id="main-content">
-				<h2 class="title">Calendars</h2>
-				
+			<div class="content">
+				<h2 class="title">Hours</h2>
+				<p>If it's not listed specifically, try the super-useful visual or the all dining link.</p>
 				<ul>
-					<li><a href = "http://www.princeton.edu/frist/calendr.html">Frist</a></li>
-					<li><a href = "http://libraryvm.princeton.edu/about/hours/index.php">Libraries</a></li>
-					<li><a href = "http://www.princeton.edu/facilities/info/dining/hours/">All dining hours</a></li>
-					<li><a href = "http://www.princeton.edu/facilities/info/dining/hours/current-hours-(2).pdf">     Dining hours, regular academic year</a></li>
-					<li><a href = "http://www.princeton.edu/campusrec/dillon-gym/facility-schedules/">All recreational facilities schedules</a></li>
-					<li><a href = ""></a></li>
+					<li><a href = "http://www.princeton.edu/wilsoncollege/academics/study-spaces/library/LibraryStudySpaces.pdf" target="_blank">Super-useful study spaces visual</a></li> 
+					<li><a href = "http://www.princeton.edu/frist/calendr.html" target="_blank">Frist</a></li>
+					<li><a href = "http://libraryvm.princeton.edu/about/hours/index.php" target="_blank">Libraries</a></li>
+					<li><a href = "http://www.princeton.edu/facilities/info/dining/hours/" target="_blank">All dining</a></li>
+					<li><a href = "http://www.princeton.edu/facilities/info/dining/hours/current-hours-(2).pdf" target="_blank">Dining, regular academic year</a></li>
+					<li><a href = "http://www.princeton.edu/campusrec/dillon-gym/facility-schedules/" target="_blank">All recreational facilities</a></li>
+					<li><a href = "http://www.pustore.com/Contact.aspx" target="_blank">U-Stores</a></li>
+					<li><a href = "http://artmuseum.princeton.edu/visit/" target="_blank">Art Museum</a></li>
+					<li><a href = "http://webscript.princeton.edu/~cafe/Murray_Dodge_Cafe/Upcoming_Events.html" target="_blank">Murray Dodge Upcoming Events</a></li>
+					<li><a onclick="javascript:ShwHid('MD')" href="javascript:;">Murray Dodge daily hours</a> 
+						<div class="mid" id="MD" style="display: none;">
+						10:00pm until 12:30pm<br>
+						Open for Intersession<br>
+						<a href="https://www.facebook.com/profile.php?id=100001623517164">facebook page</a>
+						</div>
+					</li>
+					<li><a onclick="javascript:ShwHid('CC')" href="javascript:;">Campus Club/Taproom Café</a> 
+						<div class="mid" id="CC" style="display: none;">
+						Monday - Wednesday: 8 am - 12 midnight<br>
+						Thursday & Friday:  8 am - 2 am<br>
+						Saturday:  10 am - 2 am<br>
+						Sunday:  10 am - 12 midnight<br><br>
+						Monday - Friday, 8 am - 6 pm the doors of Campus Club are open.<br>
+						After 6 pm and on the weekends, students must swipe their TigerCard to gain entrance into the building.<br><br>
+						Taproom Café:<br>
+						Sun - Wed and Fri: 8PM to Midnight<br>
+						Thu & Sat, 8PM to 2AM
+						</div>
+					</li>
+					<li><a onclick="javascript:ShwHid('DB')" href="javascript:;">Dbar</a> 
+						<div class="mid" id="DB" style="display: none;">
+						10pm - 2am, 7 days a week
+						</div>
+					</li>
+					<li><a onclick="javascript:ShwHid('tix')" href="javascript:;">Ticket offices</a> 
+						<div class="mid" id="tix" style="display: none;">
+						Athletic Ticket Office at Jadwin Gymnasium:<br>
+						Open Monday through Thursday 9:00 am - 4:00 pm and Friday 9:00 am - 2:00 pm.<br>
+						Open one hour prior to the event at the venue.<br><br>
+						Frist Campus Center Ticket Office:<br>
+						Open Monday – Friday 12:00 pm – 6:00 pm<br>
+						Open two hours prior to the performances at the Frist Campus Center.<br><br>
+						Richardson Auditorium Ticket Office:<br>
+						Open two hours prior to the performances at Richardson Auditorium.<br><br>
+						Theatre Intime Ticket Office:<br>
+						Open one half hour prior to the performances at the Hamilton Murray Theatre.<br><br>
+						Program in Theater and Dance Ticket Office:<br>
+						Open one half hour prior to the performances at the Matthews Acting Studio at 185 Nassau.
+						</div>
+					</li>
 				</ul>
+				</p>
 				
 			</div>
 		</div>
